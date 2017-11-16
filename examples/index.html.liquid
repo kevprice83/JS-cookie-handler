@@ -1,0 +1,32 @@
+<header class="jumbotron page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Introducing</h2>
+        <h1>The Weather Network API</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+{% if current_user %}
+	{% if current_account.fields.lang == "French" %}
+  
+		{% include 'fr_index_logged_in' %}
+
+	{% elsif current_account.fields.lang == "Spanish" %}
+	
+
+		{% include 'es_index_logged_in' %}
+
+	{% else %}
+	
+		{% include 'en_index_logged_in' %}
+
+	{% endif %}
+
+{% else %}
+	
+  {% include 'index_not_logged_in' %}
+  
+{% endif %}

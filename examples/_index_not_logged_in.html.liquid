@@ -1,0 +1,1028 @@
+<!-- ENGLISH LANGUAGE SECTION -->
+<section id="is-visible" class="lang-en">
+<section class="sell">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-md-12">
+          <h3>Welcome to The Weather Network API in English</h3>
+          <p>Our Weather API provides you with access to the latest weather conditions on-demand.  Easily integrate our trusted and accurate forecasts into your website, mobile application, digital signage or other consumer platform.  The Weather API gives you the capability to keep your customers informed of the latest conditions in real-time so they can plan their day.</p>
+          <p><h3>Key Features</h3></p>
+        </div>
+        
+      </div>
+    <div class="container">
+      <div class="panel-heading">
+          <div class="primary-color">
+            Forecasts
+          </div>
+          <p class="secondary-color">
+            Current conditions, hourly and 7 day forecasts
+          </p>
+        </div>
+        <div class="panel-heading">
+          <div class="primary-color">
+            Search
+          </div>
+          <p class="secondary-color">
+            City search capability
+
+          </p>
+        </div>
+        <div class="panel-heading">
+          <div class="primary-color">
+            Multi-Language Support
+          </div>
+          <p class="secondary-color">
+            Data available in multiple languages
+          </p>
+        </div>
+      <div class="panel-heading">
+          <div class="primary-color">
+            Data Configurability
+          </div>
+          <p class="secondary-color">
+            Offers both metric and imperial languages
+          </p>
+        </div>
+      <div class="panel-heading">
+          <div class="primary-color">
+            Flexible Data Access
+          </div>
+          <p class="secondary-color">
+            Data available in either XML or JSON format
+          </p>
+        </div>
+    </div>
+    <div></br></br></div>
+    <div class="plans">
+         <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Get started today with a FREE 90 day developer account {{ plan.name }}</a>
+        </div>
+    </div>
+
+    </div>
+
+   </section>
+
+
+  <section class="plans" id="plans">
+    <div class="container">
+      <h1>Pick your plan</h1>
+      </br></br>
+      <div class="row">
+        {% for plan in provider.services.api.application_plans %}
+          <div class="col-md-12">
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </section>
+</section>
+
+<!-- FRENCH LANGUAGE SECTION -->
+
+<section id="" class="lang-fr">
+<section class="sell">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-md-12">
+          <h3>Welcome to The Weather Network API in French</h3>
+          <p>Our Weather API provides you with access to the latest weather conditions on-demand.  Easily integrate our trusted and accurate forecasts into your website, mobile application, digital signage or other consumer platform.  The Weather API gives you the capability to keep your customers informed of the latest conditions in real-time so they can plan their day.</p>
+          <p><h3>Key Features</h3></p>
+        </div>
+        
+      </div>
+    <div class="container">
+      <div class="panel-heading">
+          <div class="primary-color">
+            Forecasts
+          </div>
+          <p class="secondary-color">
+            Current conditions, hourly and 7 day forecasts
+          </p>
+        </div>
+        <div class="panel-heading">
+          <div class="primary-color">
+            Search
+          </div>
+          <p class="secondary-color">
+            City search capability
+
+          </p>
+        </div>
+        <div class="panel-heading">
+          <div class="primary-color">
+            Multi-Language Support
+          </div>
+          <p class="secondary-color">
+            Data available in multiple languages
+          </p>
+        </div>
+      <div class="panel-heading">
+          <div class="primary-color">
+            Data Configurability
+          </div>
+          <p class="secondary-color">
+            Offers both metric and imperial languages
+          </p>
+        </div>
+      <div class="panel-heading">
+          <div class="primary-color">
+            Flexible Data Access
+          </div>
+          <p class="secondary-color">
+            Data available in either XML or JSON format
+          </p>
+        </div>
+    </div>
+    <div></br></br></div>
+    <div class="plans">
+         <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Get started today with a FREE 90 day developer account {{ plan.name }}</a>
+        </div>
+    </div>
+
+    </div>
+
+   </section>
+
+
+  <section class="plans" id="plans">
+    <div class="container">
+      <h1>Pick your plan</h1>
+      </br></br>
+      <div class="row">
+        {% for plan in provider.services.api.application_plans %}
+          <div class="col-md-12">
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </section>
+</section>
+<!-- SPANISH LANGUAGE SECTION -->
+
+<section id="" class="lang-es">
+<section class="sell">
+    <div class="container">
+      <div class="row">
+      
+        <div class="col-md-12">
+          <h3>Welcome to The Weather Network API in Spanish</h3>
+          <p>Our Weather API provides you with access to the latest weather conditions on-demand.  Easily integrate our trusted and accurate forecasts into your website, mobile application, digital signage or other consumer platform.  The Weather API gives you the capability to keep your customers informed of the latest conditions in real-time so they can plan their day.</p>
+          <p><h3>Key Features</h3></p>
+        </div>
+        
+      </div>
+    <div class="container">
+      <div class="panel-heading">
+          <div class="primary-color">
+            Forecasts
+          </div>
+          <p class="secondary-color">
+            Current conditions, hourly and 7 day forecasts
+          </p>
+        </div>
+        <div class="panel-heading">
+          <div class="primary-color">
+            Search
+          </div>
+          <p class="secondary-color">
+            City search capability
+
+          </p>
+        </div>
+        <div class="panel-heading">
+          <div class="primary-color">
+            Multi-Language Support
+          </div>
+          <p class="secondary-color">
+            Data available in multiple languages
+          </p>
+        </div>
+      <div class="panel-heading">
+          <div class="primary-color">
+            Data Configurability
+          </div>
+          <p class="secondary-color">
+            Offers both metric and imperial languages
+          </p>
+        </div>
+      <div class="panel-heading">
+          <div class="primary-color">
+            Flexible Data Access
+          </div>
+          <p class="secondary-color">
+            Data available in either XML or JSON format
+          </p>
+        </div>
+    </div>
+    <div></br></br></div>
+    <div class="plans">
+         <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Get started today with a FREE 90 day developer account {{ plan.name }}</a>
+        </div>
+    </div>
+
+    </div>
+
+   </section>
+
+  <section class="plans">
+    <div class="container">
+      <h1>Pick your plan in Spanish</h1>
+      </br></br>
+      <div class="row">
+        {% for plan in provider.services.api.application_plans %}
+          <div class="col-md-12">
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+            <article class="panel panel-default">
+              <div class="panel-heading">
+                <strong>{{ plan.name }}</strong>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+
+                  {% if plan.features == present %}
+                    <div class="col-md-6">
+                      <h5>Features</h5>
+                      <ul class="features list-unstyled">
+                        {% for feature in plan.features %}
+                          <li>
+                            <i class="icon-check-sign"></i>
+                            {{ feature.name }}
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  <div class="col-md-6">
+                    <h5>Limits</h5>
+                    <ul class="limits list-unstyled">
+                      {% if plan.usage_limits == present %}
+                        {% for limit in plan.usage_limits %}
+                          <li>
+                            <i class="icon-signal"></i>
+                            {{ limit.value }} {{ limit.metric.unit }}s per {{ limit.period }}
+                          </li>
+                        {% endfor %}
+                      {% else %}
+                        <li>
+                          <i class="icon-signal"></i>
+                          No limits
+                        </li>
+                      {% endif %}
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+                <div class="panel-footer">
+                <div class="row">
+                  <div class="col-md-12">
+
+                    <a class="btn btn-success pull-left" href="{{ urls.signup }}?{{ plan | to_param }}">Signup to plan {{ plan.name }}</a>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </section>
+</section>
